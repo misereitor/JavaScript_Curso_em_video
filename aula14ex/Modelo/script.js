@@ -1,0 +1,1 @@
+const selId = window.document.querySelector.bind(document)

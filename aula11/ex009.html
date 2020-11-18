@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de moradia</h1>
+    <p>Informe a cidade onde você mora atualmente: <input type="text" name="naci" id="naci"></p>
+    <input type="button" id="verificador" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            const cidade = window.document.querySelector('input#naci')
+            const pessoa = cidade.value
+            const res = window.document.querySelector('div#res')
+            if (pessoa == 'Brasil') {
+                res.innerHTML = `<p>Você é Brasileira</p>`
+            } else {
+                res.innerHTML = `<p>Você é estranjeira</p>`
+            }
+        }
+    </script>
+</body>
+</html>
